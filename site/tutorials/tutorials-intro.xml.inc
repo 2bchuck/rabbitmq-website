@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <div>
   <p>
-    RabbitMQ is a message broker: it accepts and forwards messages.
+    RabbitMQ는 메세지를 주고 받는 메세지 중개자입니다.
 
-    You can think about it as a post office: when you put the mail that you want posting in a post box,
-    you can be sure that Mr. or Ms. Mailperson will eventually deliver the mail to your recipient.
+    우체국처럼 생각하셔도 무방합니다. 우편함에 편지를 넣으면 집배원이 언젠가는 수취인에게 전달해주는 것처럼 말이죠.
 
-    In this analogy, RabbitMQ is a post box, a post office and a postman.
+    RabbitMQ는 우체통이고, 우체국이면서 집배원입니다.
   </p>
 
   <p>
-    The major difference between RabbitMQ and the post office is that it doesn't deal with paper,
-    instead it accepts, stores and forwards binary blobs of data ‒ <em>messages</em>.
+    RabbitMQ가 우체국과 다른 점은 종이를 다루지 않는다는 점입니다. 대신 블롭(<em>메세지</em>를 의미합니다)을 받아서 저장하고, 전달합니다.
   </p>
 
   <p>
@@ -42,7 +40,7 @@
 
     <li>
       <p>
-        <em>A queue</em> is the name for a post box which lives inside RabbitMQ.
+        <em>큐</em>는 RabbitMQ에서 사용하는 우체통의 이름입니다.
         Although messages flow through RabbitMQ and your applications, they can only be stored inside a <em>queue</em>.
         A <em>queue</em> is only bound by the host's memory &amp; disk limits, it's essentially a large message buffer.
         Many <em>producers</em> can send messages that go to one queue, and many <em>consumers</em> can try to receive data from one <em>queue</em>.
